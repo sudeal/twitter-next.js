@@ -37,6 +37,14 @@ export default function FeedColumnContent({
     return <>{children}</>;
   }
 
+  if (pathname === "/lists") {
+    return <>{children}</>;
+  }
+
+  if (pathname === "/settings") {
+    return <>{children}</>;
+  }
+
   return (
     <>
       <FeedTabs />

@@ -39,12 +39,12 @@ const navItems = [
 ];
 
 const moreMenuItems = [
-  { icon: List, label: "Lists" },
+  { icon: List, label: "Lists", href: "/lists" },
   { icon: Users, label: "Communities" },
   { icon: Zap, label: "Business" },
   { icon: SquareArrowUpRight, label: "Ads" },
   { icon: Mic2, label: "Create your Space" },
-  { icon: Settings, label: "Settings and privacy" },
+  { icon: Settings, label: "Settings and privacy", href: "/settings" },
 ];
 
 export default function Sidebar() {
@@ -122,6 +122,24 @@ export default function Sidebar() {
                   >
                     {moreMenuItems.map((moreItem) => {
                       const MoreIcon = moreItem.icon;
+                      const moreHref =
+                        "href" in moreItem ? moreItem.href : undefined;
+
+                      if (moreHref) {
+                        return (
+                          <Link
+                            key={moreItem.label}
+                            href={moreHref}
+                            className="sidebar__more-menu-item"
+                            role="menuitem"
+                            onClick={() => setMoreMenuOpen(false)}
+                          >
+                            <MoreIcon size={22} strokeWidth={2} />
+                            <span>{moreItem.label}</span>
+                          </Link>
+                        );
+                      }
+
                       return (
                         <button
                           key={moreItem.label}

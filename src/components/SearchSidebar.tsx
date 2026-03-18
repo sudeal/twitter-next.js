@@ -15,6 +15,12 @@ export default function SearchSidebar() {
   const pathname = usePathname();
   const isCreatorStudio = pathname === "/creator-studio";
   const isProfile = pathname === "/profile";
+  const isLists = pathname === "/lists";
+  const isSettings = pathname === "/settings";
+
+  if (isSettings) {
+    return null;
+  }
 
   return (
     <aside className="search-sidebar" aria-label="Arama ve Premium">
@@ -32,7 +38,7 @@ export default function SearchSidebar() {
         />
       </div>
 
-      {!isCreatorStudio && !isProfile && (
+      {!isCreatorStudio && !isProfile && !isLists && (
         <div className="search-sidebar__premium">
           <h3 className="search-sidebar__premium-title">
             Subscribe to Premium
@@ -48,7 +54,7 @@ export default function SearchSidebar() {
         </div>
       )}
 
-      {!isCreatorStudio && !isProfile && <TodayNews />}
+      {!isCreatorStudio && !isProfile && !isLists && <TodayNews />}
       {!isCreatorStudio && !isProfile && <WhatsHappening />}
 
       {isProfile ? (
