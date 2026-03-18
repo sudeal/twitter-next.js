@@ -34,7 +34,7 @@ const navItems = [
   { icon: Bookmark, label: "Bookmarks" },
   { icon: FlaskConical, label: "Creator Studio", href: "/creator-studio" },
   { icon: null, label: "Premium", premium: true },
-  { icon: User, label: "Profile" },
+  { icon: User, label: "Profile", href: "/profile" },
   { icon: CircleEllipsis, label: "More", isMore: true },
 ];
 

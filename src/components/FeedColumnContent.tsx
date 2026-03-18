@@ -33,6 +33,10 @@ export default function FeedColumnContent({
     return <>{children}</>;
   }
 
+  if (pathname === "/profile") {
+    return <>{children}</>;
+  }
+
   return (
     <>
       <FeedTabs />
