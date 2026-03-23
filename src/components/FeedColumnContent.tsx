@@ -45,6 +45,10 @@ export default function FeedColumnContent({
     return <>{children}</>;
   }
 
+  if (pathname === "/communities") {
+    return <>{children}</>;
+  }
+
   return (
     <>
       <FeedTabs />

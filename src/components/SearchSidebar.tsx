@@ -17,6 +17,7 @@ export default function SearchSidebar() {
   const isProfile = pathname === "/profile";
   const isLists = pathname === "/lists";
   const isSettings = pathname === "/settings";
+  const isCommunities = pathname === "/communities";
 
   if (isSettings) {
     return null;
@@ -24,21 +25,23 @@ export default function SearchSidebar() {
 
   return (
     <aside className="search-sidebar" aria-label="Arama ve Premium">
-      <div className="search-sidebar__box">
-        <Search
-          size={18}
-          className="search-sidebar__icon"
-          aria-hidden
-        />
-        <input
-          type="search"
-          className="search-sidebar__input"
-          placeholder="Search"
-          aria-label="Search"
-        />
-      </div>
+      {!isCommunities && (
+        <div className="search-sidebar__box">
+          <Search
+            size={18}
+            className="search-sidebar__icon"
+            aria-hidden
+          />
+          <input
+            type="search"
+            className="search-sidebar__input"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+      )}
 
-      {!isCreatorStudio && !isProfile && !isLists && (
+      {!isCreatorStudio && !isProfile && !isLists && !isCommunities && (
         <div className="search-sidebar__premium">
           <h3 className="search-sidebar__premium-title">
             Subscribe to Premium
@@ -54,7 +57,7 @@ export default function SearchSidebar() {
         </div>
       )}
 
-      {!isCreatorStudio && !isProfile && !isLists && <TodayNews />}
+      {!isCreatorStudio && !isProfile && !isLists && !isCommunities && <TodayNews />}
       {!isCreatorStudio && !isProfile && <WhatsHappening />}
 
       {isProfile ? (

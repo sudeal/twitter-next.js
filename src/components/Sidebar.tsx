@@ -40,7 +40,7 @@ const navItems = [
 
 const moreMenuItems = [
   { icon: List, label: "Lists", href: "/lists" },
-  { icon: Users, label: "Communities" },
+  { icon: Users, label: "Communities", href: "/communities" },
   { icon: Zap, label: "Business" },
   { icon: SquareArrowUpRight, label: "Ads" },
   { icon: Mic2, label: "Create your Space" },

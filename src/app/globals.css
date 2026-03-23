@@ -2837,3 +2837,122 @@ a.sidebar__nav-item {
   margin-top: 2px;
 }
 
+/* ========== Communities page ========== */
+.communities-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.communities-page__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eff3f4;
+}
+
+.communities-page__back,
+.communities-page__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 9999px;
+  background: transparent;
+  color: #0f1419;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.communities-page__back:hover,
+.communities-page__icon-btn:hover {
+  background-color: #eff3f4;
+}
+
+.communities-page__title {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #0f1419;
+}
+
+.communities-page__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.communities-page__topics {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eff3f4;
+}
+
+.communities-page__topics-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.communities-page__topics-row::-webkit-scrollbar {
+  display: none;
+}
+
+.communities-page__topic-chip {
+  flex-shrink: 0;
+  padding: 10px 22px;
+  border: 1px solid #cfd9de;
+  border-radius: 9999px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f1419;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.communities-page__topic-chip:hover {
+  background-color: #f7f9f9;
+}
+
+.communities-page__topic-chip--active {
+  border-color: #1d9bf0;
+  background-color: #1d9bf0;
+  color: #fff;
+}
+
+.communities-page__topic-chip--active:hover {
+  background-color: #1a8cd8;
+}
+
+.communities-page__back-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #cfd9de;
+  border-radius: 9999px;
+  background-color: #fff;
+  color: #0f1419;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.communities-page__back-chip:hover {
+  background-color: #f7f9f9;
+}
+
+.communities-page__empty-space {
+  flex: 1;
+  min-height: 320px;
+}
+
