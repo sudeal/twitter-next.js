@@ -7,6 +7,7 @@ import {
   artCommunityFeed,
   entertainmentCommunityFeed,
   gamingCommunityFeed,
+  politicsCommunityFeed,
   sportsCommunityFeed,
   technologyCommunityFeed,
 } from "@/data/communities";
@@ -58,12 +59,21 @@ const gamingTopics = [
   "RPG",
 ];
 
+const politicsTopics = [
+  "Politics",
+  "Elections",
+  "Parliament",
+  "Local Government",
+  "Policy",
+];
+
 const topicGroups: Record<string, string[]> = {
   Sports: sportsTopics,
   Technology: technologyTopics,
   Art: artTopics,
   Entertainment: entertainmentTopics,
   Gaming: gamingTopics,
+  Politics: politicsTopics,
 };
 
 const groupFeeds = {
@@ -72,6 +82,7 @@ const groupFeeds = {
   Art: artCommunityFeed,
   Entertainment: entertainmentCommunityFeed,
   Gaming: gamingCommunityFeed,
+  Politics: politicsCommunityFeed,
 } as const;
 
 export default function CommunitiesView() {

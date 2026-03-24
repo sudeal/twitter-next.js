@@ -342,3 +342,72 @@ export const gamingCommunityFeed = [
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop",
   },
 ];
+
+export const politicsCommunityFeed = [
+  {
+    id: "pol-1",
+    community: "Gundem Masasi",
+    authorName: "Berk Aydemir",
+    authorHandle: "@berkaydemir",
+    authorAvatar: "https://i.pravatar.cc/150?u=politics-author-1",
+    time: "1h",
+    title: "Mecliste bugun ekonomi paketi uzerine kritik gorusme yapildi",
+    summary:
+      "Milletvekilleri yeni duzenlemenin piyasaya etkilerini ve vergi tarafindaki degisiklikleri tartisiyor.",
+    stats: "2,604 posts",
+    image:
+      "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: "pol-2",
+    community: "Sehir Gundemi",
+    authorName: "Sude Karaca",
+    authorHandle: "@sudekaraca",
+    authorAvatar: "https://i.pravatar.cc/150?u=politics-author-2",
+    time: "2h",
+    title: "Yerel yonetimlerde yeni ulasim projeleri aciklandi",
+    summary:
+      "Buyuksehir belediyeleri toplu tasima yatirimlarinin takvimini paylasmaya basladi.",
+    stats: "1,145 posts",
+  },
+  {
+    id: "pol-3",
+    community: "Politika Izleme",
+    authorName: "Cihan Erol",
+    authorHandle: "@cihanerol",
+    authorAvatar: "https://i.pravatar.cc/150?u=politics-author-3",
+    time: "4h",
+    title: "Liderler zirvesi sonrasi ilk degerlendirmeler geldi",
+    summary:
+      "Dis politika ve ticaret basliklarinda ortak mesajlarin tonu yorumcular tarafindan analiz ediliyor.",
+    stats: "1,932 posts",
+    image:
+      "https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    id: "pol-4",
+    community: "Ankara Notlari",
+    authorName: "Melis Ucar",
+    authorHandle: "@melisucar",
+    authorAvatar: "https://i.pravatar.cc/150?u=politics-author-4",
+    time: "6h",
+    title: "Komisyon toplantisinda egitim basligi one cikti",
+    summary:
+      "Muhalefet ve iktidar temsilcileri yeni duzenlemelere dair farkli onceliklerini paylasti.",
+    stats: "876 posts",
+  },
+  {
+    id: "pol-5",
+    community: "Secim Rotasi",
+    authorName: "Arin Yuce",
+    authorHandle: "@arinyuce",
+    authorAvatar: "https://i.pravatar.cc/150?u=politics-author-5",
+    time: "8h",
+    title: "Partilerin saha calismalari haftanin en cok konusulan basligi oldu",
+    summary:
+      "Miting programlari ve secmen bulusmalari sosyal medyada genis yankı bulmaya devam ediyor.",
+    stats: "1,388 posts",
+    image:
+      "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1200&auto=format&fit=crop",
+  },
+];
